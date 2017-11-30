@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>entomica</title>
+
+<link rel="icon" href="/favicon.png" type="image/png">
+<link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css" media="screen,projection"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+
+<body>
+<nav role="navigation" class="purple darken-4">
+  <div class="nav-wrapper container">
+    <span id="breadcrumbs">
+      <a href="/" class="breadcrumb"><img src="/favicon.png" style="display: inline-block; height: 1.5em; margin-bottom: -0.4em" /></a>
+    </span>
+    <form action="https://www.google.com/search" method="get" class="container right" style="width: 400px">
+      <div class="input-field">
+        <input name="sitesearch" value="entomica.science" type="hidden">
+        <input id="search" name="q" type="search" placeholder="Search..." required>
+        <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+        <i class="material-icons">close</i>
+      </div>
+    </form>
+  </div>
+</nav>
+
+<div class="container">
+  <div class="section">
+    <div class="center">
+      <h1>en&middot;tom&middot;ica<sup>&trade;</sup></h1>
+      <h2>Sault Ste. Marie's Insectarium</h2>
+    </div>
+
+    <div class="row">
+      <div class="col s6">
+        <div class="card">
+          <div class="card-image">
+            <a href="/insects"><img src="/img/browse.jpg" /></a>
+          </div>
+          <div class="card-content center">
+            <a href="/insects" class="waves-effect waves-light btn-large yellow darken-1 black-text">Browse Insects</a>
+          </div>
+        </div>
+      </div>
+      <div class="col s6">
+        <div class="card">
+          <div class="card-image">
+            <a href="https://www.entomica.com/bookings-1" target="_blank"><img src="/img/bookings.jpg" /></a>
+          </div>
+          <div class="card-content center">
+            <a href="https://www.entomica.com/bookings-1" target="_blank" class="waves-effect waves-light btn-large yellow darken-1 black-text">Bookings</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+<script type="text/javascript">
+  var click = new Audio('/click.mp3');
+  document.onclick = function() {
+    click.currentTime = 0;
+    click.play();
+  };
+</script>
+</body>
+</html>

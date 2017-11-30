@@ -1,0 +1,86 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>entomica &middot Rhinoceros Beetle</title>
+
+<link rel="icon" href="/favicon.png" type="image/png">
+<link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css" media="screen,projection"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<script src="/speakClient.js"></script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+
+<body>
+<div id="audio"></div>
+
+<nav role="navigation" class="purple darken-4">
+  <div class="nav-wrapper container">
+    <span id="breadcrumbs">
+      <a href="/" class="breadcrumb"><img src="/favicon.png" style="display: inline-block; height: 1.5em; margin-bottom: -0.4em" /></a>
+      <a href="/insects" class="breadcrumb">Insects</a>
+      <a href="/insects/category1" class="breadcrumb">Category 1</a>
+      <a href="/insects/category1/rhinocerosbeetle.html" class="breadcrumb">Rhinoceros Beetle</a>
+    </span>
+    <form action="https://www.google.com/search" method="get" class="container right" style="width: 400px">
+      <div class="input-field">
+        <input name="sitesearch" value="entomica.science" type="hidden">
+        <input id="search" name="q" type="search" placeholder="Search..." required>
+        <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+        <i class="material-icons">close</i>
+      </div>
+    </form>
+  </div>
+</nav>
+
+<div class="container">
+  <div class="section">
+    <div class="center">
+      <h1 class="center">Rhinoceros Beetle</h1>
+      <a href="rhinocerosbeetle.vr.html" class="waves-effect waves-light btn-large yellow darken-1 black-text"><i class="material-icons right">visibility</i>View in VR</a>
+    </div>
+    <div class="carousel">
+      <a class="carousel-item" href="#one!"><img src="/img/bugs/rhinocerosbeetle.jpg" /></a>
+      <a class="carousel-item" href="#two!"><img src="/img/bugs/rhinocerosbeetle.jpg" /></a>
+      <a class="carousel-item" href="#three!"><img src="/img/bugs/rhinocerosbeetle.jpg" /></a>
+      <a class="carousel-item" href="#four!"><img src="/img/bugs/rhinocerosbeetle.jpg" /></a>
+      <a class="carousel-item" href="#five!"><img src="/img/bugs/rhinocerosbeetle.jpg" /></a>
+    </div><br />
+    <div id="readme">
+      <p class="flow-text">Mollitia et sunt nemo ipsam assumenda voluptatibus. Repellat iure sed ipsum corporis. Nobis rem sint velit sit. Nostrum quidem enim vel non architecto. Ut voluptas quibusdam et eum.</p>
+      <p class="flow-text">Odit doloremque laudantium repellendus non rem ducimus. Eligendi exercitationem sit minima labore. Expedita dolores eum ea aut veniam officia id amet. Facere maxime facilis sapiente veniam deserunt non eius in. Est qui iusto et delectus sit assumenda.</p>
+      <p class="flow-text">Quos nisi voluptatibus fugit sit saepe optio minima non. Consequatur sunt sunt reiciendis. Sint velit fuga veniam adipisci repellat cum ut et. Voluptate similique adipisci aut quos repellendus vel et. Repudiandae aspernatur enim qui incidunt adipisci sit dolorum voluptatem. Voluptatibus saepe sequi dignissimos blanditiis aut.</p>
+      <p class="flow-text">Et amet sit voluptatem. Ea est eius voluptatem veritatis harum molestias maxime. Omnis doloribus nisi dignissimos cumque aut ut. Quod quo ad voluptatem debitis a ut iure. Voluptas sed consectetur rerum accusamus distinctio et aut.</p>
+      <p class="flow-text">Minima eos aperiam aut unde molestiae sunt placeat. Enim cum et mollitia voluptatibus assumenda deserunt. Nostrum sapiente vel ea voluptate.</p>
+    </div>
+  </div>
+</div>
+
+<style>
+  .carousel {
+    height: 600px;
+    margin-top: -150px;
+  }
+  .carousel .carousel-item {
+    width: 400px;
+  }
+</style>
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+<script type="text/javascript">
+  $(document).ready(function(){
+    $('.carousel').carousel();
+    $('#readme').each(function(i, current) {
+      speak($(current).text(), { speed: 140 });
+    });
+  });
+
+  var click = new Audio('/click.mp3');
+  document.onclick = function() {
+    click.currentTime = 0;
+    click.play();
+  };
+</script>
+</body>
+</html>
